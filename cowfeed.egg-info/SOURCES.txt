@@ -1,0 +1,7 @@
+README.md
+setup.py
+cowfeed.egg-info/PKG-INFO
+cowfeed.egg-info/SOURCES.txt
+cowfeed.egg-info/dependency_links.txt
+cowfeed.egg-info/entry_points.txt
+cowfeed.egg-info/top_level.txt
