@@ -6,6 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="cowfeed",
     version="0.0.1",
+    install_requires=["feedparser", "bs4"],
     author="Angus Hollands",
     author_email="goosey15@gmail.com",
     description="A simple RSS wrapper to cowsay",
