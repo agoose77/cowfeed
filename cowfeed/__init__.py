@@ -45,12 +45,13 @@ def main():
             raise feed.bozo_exception
 
         for item in feed['entries']:
-            if item.content:
+            try:
                 content_html = item.content[0]['value']
+            except AttributeError:
+                content = ''
+            else:
                 content = BeautifulSoup(content_html,
                 features="html.parser").get_text()
-            else:
-                content = ''
 
             if not args.persist:
                 clear_screen()
